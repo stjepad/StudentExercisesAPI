@@ -52,9 +52,9 @@ namespace StudentExercisesAPI.Controllers
             if (q != null)
             {
                 string isQ = $@"
-                    AND i.FirstName LIKE '%{q}%'
-                    OR i.LastName LIKE '%{q}%'
-                    OR i.SlackHandle LIKE '%{q}%'
+                    AND s.FirstName LIKE '%{q}%'
+                    OR s.LastName LIKE '%{q}%'
+                    OR s.SlackHandle LIKE '%{q}%'
                 ";
                 sql = $"{sql} {isQ}";
             }
